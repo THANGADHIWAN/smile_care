@@ -1,11 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import treatmentRoom from "@/assets/clinic-1.jpg";
-import reception from "@/assets/clinic-2.jpg";
-import doctorDesk from "@/assets/clinic-1.jpg";
-import doctorPortrait from "@/assets/doctor.jpg";
-import beforeAfter from "@/assets/smile-before.png";
+// Lovable CDN URLs
+const LOVABLE_CDN = (assetId: string, filename: string) => 
+  `https://cdn.lovable.app/assets-v1/4b6443ba-715a-46b8-8337-2dd02f722961/${assetId}/${filename}`;
+
+const treatmentRoom = LOVABLE_CDN("1246b591-776e-46fc-ac7c-fd522c2a50a4", "clinic-treatment-room.png");
+const reception = LOVABLE_CDN("2b3256f3-dea9-47a5-b49e-a625f1f87b11", "clinic-reception.jpeg");
+const doctorDesk = LOVABLE_CDN("b6751299-3bd3-47f7-97ec-0c1783f523e9", "doctor-desk.jpg");
+const doctorPortrait = LOVABLE_CDN("c0fb8f11-3b49-4beb-8651-e501190ffee0", "dr-akash-portrait.png");
+const beforeAfter = LOVABLE_CDN("aaeced04-fc89-4392-a5e2-657bf9ee3ea2", "before-after-treatment.jpg");
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({

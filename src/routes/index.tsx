@@ -19,27 +19,29 @@ import {
   X,
   Instagram,
 } from "lucide-react";
-import heroImg from "@/assets/hero-dental.jpg";
-import doctorPortrait from "@/assets/doctor.jpg";
-import treatmentImg from "@/assets/treatment.jpg";
-import clinic1 from "@/assets/clinic-1.jpg";
-import clinic2 from "@/assets/clinic-2.jpg";
-import cleaningImg from "@/assets/hero-dental.jpg";
-import bracesImg from "@/assets/hero-dental.jpg";
-import implantImg from "@/assets/hero-dental.jpg";
-import crownImg from "@/assets/hero-dental.jpg";
-import rctImg from "@/assets/hero-dental.jpg";
-import drManoj from "@/assets/doctor.jpg";
-import drHariprasath from "@/assets/doctor.jpg";
-import drGayathri from "@/assets/doctor.jpg";
-import drThulidhasan from "@/assets/doctor.jpg";
-import grandOpening from "@/assets/clinic-1.jpg";
-import expertCare from "@/assets/clinic-2.jpg";
-import insideClinic from "@/assets/clinic-1.jpg";
-import pediatricNew from "@/assets/hero-dental.jpg";
-import smileBefore from "@/assets/smile-before.png";
-import restorationBefore from "@/assets/restoration-before.png";
-import dentureImg from "@/assets/hero-dental.jpg";
+// Lovable CDN URLs
+const LOVABLE_CDN = (assetId: string, filename: string) => 
+  `https://cdn.lovable.app/assets-v1/4b6443ba-715a-46b8-8337-2dd02f722961/${assetId}/${filename}`;
+
+const heroImg = "/hero-dental.jpg";
+const doctorPortrait = LOVABLE_CDN("c0fb8f11-3b49-4beb-8651-e501190ffee0", "dr-akash-portrait.png");
+const treatmentImg = "/treatment.jpg";
+const cleaningImg = LOVABLE_CDN("6e01e078-d5fb-4512-b333-3b8640bd646d", "cleaning-polishing.jpg");
+const bracesImg = LOVABLE_CDN("26aeb88d-f720-482b-a32d-5b42eae31841", "braces-aligners.jpg");
+const implantImg = LOVABLE_CDN("307538c0-fb4a-49fd-b032-c4101a661336", "implant.jpg");
+const crownImg = LOVABLE_CDN("431446ec-8275-41c0-bceb-63294c83ed73", "crown-bridge-new.png");
+const rctImg = LOVABLE_CDN("b035e116-7b1a-48e4-b773-74089acb4e30", "root-canal-steps.png");
+const drManoj = LOVABLE_CDN("1ee53076-fc21-43ab-bbfc-c833a56f2228", "dr-manoj.png");
+const drHariprasath = LOVABLE_CDN("b97def64-f7f8-4fb4-9fef-92bc5972d59f", "dr-hariprasath.png");
+const drGayathri = LOVABLE_CDN("77bfc0fe-60e9-4704-8ef3-29bf42b1d48e", "dr-gayathri.png");
+const drThulidhasan = LOVABLE_CDN("8ba97500-a566-4cf7-85eb-4daeebd2a2c8", "dr-thulidhasan.png");
+const grandOpening = LOVABLE_CDN("cdc2f1f8-8b0a-4917-b02e-9f937c51bb45", "grand-opening.jpeg");
+const expertCare = LOVABLE_CDN("9bea5b40-c481-4d26-9f6d-2f8ff3ae673c", "expert-care.jpeg");
+const insideClinic = LOVABLE_CDN("a7ca4ec8-7c4a-466e-9aad-e580795cafb4", "inside-clinic.png");
+const pediatricNew = LOVABLE_CDN("52ac0952-2785-45e9-80b9-87d4b52cff03", "pediatric-care-new.png");
+const smileBefore = LOVABLE_CDN("f20e54b1-5897-4d25-b1e1-059501c74abe", "before-after-smile.png");
+const restorationBefore = LOVABLE_CDN("a9b22ed3-4a15-4c2c-a272-3cf59e08dad4", "before-after-restoration.png");
+const dentureImg = LOVABLE_CDN("75ad0afe-9145-418c-98fc-8f86c69fd4e4", "complete-denture-treatment.png");
 
 import { Reveal, CountUp } from "@/components/site/Reveal";
 import { BeforeAfterSlider } from "@/components/site/BeforeAfterSlider";

@@ -4,7 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Languages } from "lucide-react";
 import { CLINIC } from "@/lib/clinic";
 import { useI18n } from "@/lib/i18n";
-import logoAsset from "@/assets/doctor.jpg";
+// Lovable CDN URLs
+const LOVABLE_CDN = (assetId: string, filename: string) => 
+  `https://cdn.lovable.app/assets-v1/4b6443ba-715a-46b8-8337-2dd02f722961/${assetId}/${filename}`;
+
+const logoAsset = LOVABLE_CDN("ed629090-584d-4fd8-99c4-63028fb76a3b", "muthu-logo.png");
 
 export function Header() {
   const { t, locale, setLocale } = useI18n();

@@ -1,11 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { CLINIC } from "@/lib/clinic";
-import doctorImg from "@/assets/doctor.jpg";
-import clinic1 from "@/assets/clinic-2.jpg";
-import clinic2 from "@/assets/clinic-1.jpg";
-import doctorDesk from "@/assets/clinic-1.jpg";
-import clinicSignboard from "@/assets/clinic-2.jpg";
+// Lovable CDN URLs
+const LOVABLE_CDN = (assetId: string, filename: string) => 
+  `https://cdn.lovable.app/assets-v1/4b6443ba-715a-46b8-8337-2dd02f722961/${assetId}/${filename}`;
+
+const doctorImg = LOVABLE_CDN("c0fb8f11-3b49-4beb-8651-e501190ffee0", "dr-akash-portrait.png");
+const clinic1 = LOVABLE_CDN("2b3256f3-dea9-47a5-b49e-a625f1f87b11", "clinic-reception.jpeg");
+const clinic2 = LOVABLE_CDN("1246b591-776e-46fc-ac7c-fd522c2a50a4", "clinic-treatment-room.png");
+const doctorDesk = LOVABLE_CDN("b6751299-3bd3-47f7-97ec-0c1783f523e9", "doctor-desk.jpg");
+const clinicSignboard = LOVABLE_CDN("cdc2f1f8-8b0a-4917-b02e-9f937c51bb45", "grand-opening.jpeg");
 import { GraduationCap, ShieldCheck, Heart } from "lucide-react";
 
 import { breadcrumbSchema, personSchema, DOCTORS } from "@/lib/schema";
