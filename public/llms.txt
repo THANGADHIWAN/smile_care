@@ -1,0 +1,14 @@
+# Muthu Dental Clinic
+
+> Premium, painless dental care in Panruti, Tamil Nadu, led by Dr. Akash M. (BDS, MRD). Modern equipment, gentle hands, family-friendly experience.
+
+Muthu Dental Clinic is located at 25, Cuddalore Main Road, opposite Gandhi Park, Panruti — 607106. Bookings via WhatsApp (+91 7338726004) or in-clinic.
+
+## Pages
+
+- [Home](/): Overview, services, doctor profile, testimonials, booking.
+- [About](/about): Dr. Akash M. — credentials, philosophy, clinic story.
+- [Services](/services): Full list of dental treatments offered.
+- [Gallery](/gallery): Reception, treatment room, doctor's desk.
+- [Tips](/tips): Practical dental-health articles from Dr. Akash.
+- [Contact](/contact): Address, phone, hours, FAQ, online booking.
