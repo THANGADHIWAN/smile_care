@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import treatmentRoom from "@/assets/clinic-1.jpg";
 import reception from "@/assets/clinic-2.jpg";
 import doctorDesk from "@/assets/clinic-1.jpg";
-import doctorPortrait from "@/assets/dr-akash-hero.png";
+import doctorPortrait from "@/assets/doctor.jpg";
 import beforeAfter from "@/assets/smile-before.png";
 
 export const Route = createFileRoute("/gallery")({

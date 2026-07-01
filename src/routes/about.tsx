@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { CLINIC } from "@/lib/clinic";
-import doctorImg from "@/assets/dr-akash-hero.png";
+import doctorImg from "@/assets/doctor.jpg";
 import clinic1 from "@/assets/clinic-2.jpg";
 import clinic2 from "@/assets/clinic-1.jpg";
 import doctorDesk from "@/assets/clinic-1.jpg";

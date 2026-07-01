@@ -20,7 +20,7 @@ import {
   Instagram,
 } from "lucide-react";
 import heroImg from "@/assets/hero-dental.jpg";
-import doctorPortrait from "@/assets/dr-akash-hero.png";
+import doctorPortrait from "@/assets/doctor.jpg";
 import treatmentImg from "@/assets/treatment.jpg";
 import clinic1 from "@/assets/clinic-1.jpg";
 import clinic2 from "@/assets/clinic-2.jpg";
