@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import treatmentRoom from "@/assets/clinic-treatment-room.png.asset.json";
-import reception from "@/assets/clinic-reception.jpeg.asset.json";
-import doctorDesk from "@/assets/doctor-desk.jpg.asset.json";
-import doctorPortrait from "@/assets/dr-akash-portrait.png.asset.json";
-import beforeAfter from "@/assets/before-after-treatment.jpg.asset.json";
+import treatmentRoom from "@/assets/clinic-1.jpg";
+import reception from "@/assets/clinic-2.jpg";
+import doctorDesk from "@/assets/clinic-1.jpg";
+import doctorPortrait from "@/assets/dr-akash-hero.png";
+import beforeAfter from "@/assets/smile-before.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/gallery")({
       { property: "og:title", content: "Gallery — Muthu Dental Clinic" },
       { property: "og:description", content: "Smiles, spaces and stories from our clinic." },
       { property: "og:url", content: "https://glow-dental-chat.lovable.app/gallery" },
-      { property: "og:image", content: reception.url },
+      { property: "og:image", content: reception },
     ],
     links: [{ rel: "canonical", href: "https://glow-dental-chat.lovable.app/gallery" }],
   }),
@@ -23,11 +23,11 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const items = [
-  { src: reception.url, alt: "Muthu Dental Clinic reception", tag: "Reception" },
-  { src: treatmentRoom.url, alt: "Modern treatment room with Waldent dental chair", tag: "Treatment Room" },
-  { src: beforeAfter.url, alt: "Smile transformation — before and after dental treatment at Muthu Dental Clinic", tag: "Before & After" },
-  { src: doctorDesk.url, alt: "Dr. Akash M.'s consultation desk with Muthu Dental Clinic prescription pad", tag: "Doctor's Desk" },
-  { src: doctorPortrait.url, alt: "Dr. Akash M., BDS, MRD", tag: "Dr. Akash M." },
+  { src: reception, alt: "Muthu Dental Clinic reception", tag: "Reception" },
+  { src: treatmentRoom, alt: "Modern treatment room with Waldent dental chair", tag: "Treatment Room" },
+  { src: beforeAfter, alt: "Smile transformation — before and after dental treatment at Muthu Dental Clinic", tag: "Before & After" },
+  { src: doctorDesk, alt: "Dr. Akash M.'s consultation desk with Muthu Dental Clinic prescription pad", tag: "Doctor's Desk" },
+  { src: doctorPortrait, alt: "Dr. Akash M., BDS, MRD", tag: "Dr. Akash M." },
 ];
 
 function GalleryPage() {

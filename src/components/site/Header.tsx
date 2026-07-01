@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Languages } from "lucide-react";
 import { CLINIC } from "@/lib/clinic";
 import { useI18n } from "@/lib/i18n";
-import logoAsset from "@/assets/muthu-logo.png.asset.json";
+import logoAsset from "@/assets/doctor.jpg";
 
 export function Header() {
   const { t, locale, setLocale } = useI18n();
@@ -41,7 +41,7 @@ export function Header() {
       <div className={`max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between transition-all ${scrolled ? "py-2" : "py-3"}`}>
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-gold/60 shadow-gold bg-charcoal">
-            <img src={logoAsset.url} alt={`${CLINIC.name} logo — Modern dentistry in Panruti`} className="w-full h-full object-cover" />
+            <img src={logoAsset} alt={`${CLINIC.name} logo — Modern dentistry in Panruti`} className="w-full h-full object-cover" />
           </div>
           <div className="leading-tight">
             <div className="font-display text-lg font-semibold tracking-tight text-cream">{CLINIC.short}</div>

@@ -20,26 +20,26 @@ import {
   Instagram,
 } from "lucide-react";
 import heroImg from "@/assets/hero-dental.jpg";
-import doctorPortrait from "@/assets/dr-akash-portrait.png.asset.json";
+import doctorPortrait from "@/assets/dr-akash-hero.png";
 import treatmentImg from "@/assets/treatment.jpg";
 import clinic1 from "@/assets/clinic-1.jpg";
 import clinic2 from "@/assets/clinic-2.jpg";
-import cleaningImg from "@/assets/cleaning-polishing.jpg.asset.json";
-import bracesImg from "@/assets/braces-aligners.jpg.asset.json";
-import implantImg from "@/assets/implant.jpg.asset.json";
-import crownImg from "@/assets/crown-bridge-new.png.asset.json";
-import rctImg from "@/assets/root-canal-steps.png.asset.json";
-import drManoj from "@/assets/dr-manoj.png.asset.json";
-import drHariprasath from "@/assets/dr-hariprasath.png.asset.json";
-import drGayathri from "@/assets/dr-gayathri.png.asset.json";
-import drThulidhasan from "@/assets/dr-thulidhasan.png.asset.json";
-import grandOpening from "@/assets/grand-opening.jpeg.asset.json";
-import expertCare from "@/assets/expert-care.jpeg.asset.json";
-import insideClinic from "@/assets/inside-clinic.png.asset.json";
-import pediatricNew from "@/assets/pediatric-care-new.png.asset.json";
-import smileBefore from "@/assets/before-after-smile.png.asset.json";
-import restorationBefore from "@/assets/before-after-restoration.png.asset.json";
-import dentureImg from "@/assets/complete-denture-treatment.png.asset.json";
+import cleaningImg from "@/assets/hero-dental.jpg";
+import bracesImg from "@/assets/hero-dental.jpg";
+import implantImg from "@/assets/hero-dental.jpg";
+import crownImg from "@/assets/hero-dental.jpg";
+import rctImg from "@/assets/hero-dental.jpg";
+import drManoj from "@/assets/doctor.jpg";
+import drHariprasath from "@/assets/doctor.jpg";
+import drGayathri from "@/assets/doctor.jpg";
+import drThulidhasan from "@/assets/doctor.jpg";
+import grandOpening from "@/assets/clinic-1.jpg";
+import expertCare from "@/assets/clinic-2.jpg";
+import insideClinic from "@/assets/clinic-1.jpg";
+import pediatricNew from "@/assets/hero-dental.jpg";
+import smileBefore from "@/assets/smile-before.png";
+import restorationBefore from "@/assets/restoration-before.png";
+import dentureImg from "@/assets/hero-dental.jpg";
 
 import { Reveal, CountUp } from "@/components/site/Reveal";
 import { BeforeAfterSlider } from "@/components/site/BeforeAfterSlider";
@@ -142,14 +142,14 @@ const services = [
     icon: Brush,
     name: "Cleaning & Polishing",
     desc: "Professional scaling for a fresher smile.",
-    img: cleaningImg.url,
+    img: cleaningImg,
     long: "Ultrasonic scaling removes tartar and stains, followed by polishing for a smooth, glossy finish. Recommended every 6 months.",
   },
   {
     icon: Activity,
     name: "Root Canal (RCT)",
     desc: "Single-sitting RCT with minimal discomfort.",
-    img: rctImg.url,
+    img: rctImg,
     long: "Single-sitting RCT using rotary endodontics. Saves your natural tooth and ends the pain quickly, with minimal discomfort.",
   },
   {
@@ -163,28 +163,28 @@ const services = [
     icon: Scissors,
     name: "Braces & Aligners",
     desc: "Orthodontics for every age and budget.",
-    img: bracesImg.url,
+    img: bracesImg,
     long: "Metal, ceramic and clear-aligner options for children and adults. Custom plans, predictable timelines and clear pricing.",
   },
   {
     icon: Smile,
     name: "Dental Implants",
     desc: "Permanent replacements that feel natural.",
-    img: implantImg.url,
+    img: implantImg,
     long: "Titanium implants restore missing teeth with a strong, natural-looking crown. A long-lasting solution that preserves jawbone health.",
   },
   {
     icon: Crown,
     name: "Crowns & Bridges",
     desc: "Natural-looking ceramic restorations.",
-    img: crownImg.url,
+    img: crownImg,
     long: "Ceramic crowns and bridges that look and feel natural. Digital impressions for a precise, comfortable fit.",
   },
   {
     icon: Baby,
     name: "Pediatric Care",
     desc: "Gentle dentistry your child will enjoy.",
-    img: pediatricNew.url,
+    img: pediatricNew,
     long: "Gentle, child-friendly dentistry — preventive sealants, fluoride therapy, and habit counselling for growing smiles.",
   },
 ];
@@ -303,7 +303,7 @@ function Hero() {
       {/* Doctor portrait background */}
       <div className="absolute inset-0 -z-10">
         <img
-          src={doctorPortrait.url}
+          src={doctorPortrait}
           alt="Dr. Akash M."
           width={800}
           height={1000}
@@ -630,7 +630,7 @@ function DoctorBlock() {
             <div className="absolute -inset-3 rounded-3xl bg-gradient-gold opacity-50 blur-xl" />
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] border-[5px] border-gold shadow-gold bg-charcoal">
               <img
-                src={doctorPortrait.url}
+                src={doctorPortrait}
                 alt={CLINIC.doctor.name}
                 width={800}
                 height={1000}
@@ -682,31 +682,31 @@ const TEAM = [
     name: "Dr. Akash M.",
     qual: "BDS, MRD",
     role: "Chief Dental Surgeon",
-    img: doctorPortrait.url,
+    img: doctorPortrait,
   },
   {
     name: "Dr. Thulidhasan",
     qual: "MDS",
     role: "Orthodontist",
-    img: drThulidhasan.url,
+    img: drThulidhasan,
   },
   {
     name: "Dr. Manoj",
     qual: "BDS, AMOI",
     role: "Implantologist",
-    img: drManoj.url,
+    img: drManoj,
   },
   {
     name: "Dr. Hariprasath",
     qual: "MDS",
     role: "Prosthodontist",
-    img: drHariprasath.url,
+    img: drHariprasath,
   },
   {
     name: "Dr. Gayathri S.",
     qual: "BDS",
     role: "Dental Surgeon",
-    img: drGayathri.url,
+    img: drGayathri,
   },
 ];
 
@@ -831,17 +831,17 @@ function BeforeAfter() {
     {
       title: "Smile Makeover",
       treatment: "Whitening & Polishing",
-      image: smileBefore.url,
+      image: smileBefore,
     },
     {
       title: "Full Restoration",
       treatment: "Crown & Bridge Work",
-      image: restorationBefore.url,
+      image: restorationBefore,
     },
     {
       title: "Complete Denture Treatment",
       treatment: "Full Denture Set",
-      image: dentureImg.url,
+      image: dentureImg,
     },
   ];
   return (
@@ -924,19 +924,19 @@ function InstagramBanner() {
 type GalCategory = "All" | "Before & After" | "Clinic" | "Team";
 const REELS: { thumb: string; title: string; link: string; cat: Exclude<GalCategory, "All"> }[] = [
   {
-    thumb: grandOpening.url,
+    thumb: grandOpening,
     title: "Grand Opening 🎉",
     link: "https://www.instagram.com/reel/DZP9rQLJyxQ/?igsh=ODI1NmZwZWxvaTk=",
     cat: "Team",
   },
   {
-    thumb: expertCare.url,
+    thumb: expertCare,
     title: "Expert Care in Action",
     link: "https://www.instagram.com/reel/DaKuJOehKdF/?igsh=bjU4NnVlcGtsaWpm",
     cat: "Before & After",
   },
   {
-    thumb: insideClinic.url,
+    thumb: insideClinic,
     title: "Inside Our Clinic",
     link: CLINIC.instagram,
     cat: "Clinic",

@@ -1,16 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { CLINIC } from "@/lib/clinic";
-import doctorImgAsset from "@/assets/dr-akash-portrait.png.asset.json";
-const doctorImg = doctorImgAsset.url;
-import receptionAsset from "@/assets/clinic-reception.jpeg.asset.json";
-import treatmentAsset from "@/assets/clinic-treatment-room.png.asset.json";
-import doctorDeskAsset from "@/assets/doctor-desk.jpg.asset.json";
-import grandOpeningAsset from "@/assets/grand-opening.jpeg.asset.json";
-const clinic1 = receptionAsset.url;
-const clinic2 = treatmentAsset.url;
-const doctorDesk = doctorDeskAsset.url;
-const clinicSignboard = grandOpeningAsset.url;
+import doctorImg from "@/assets/dr-akash-hero.png";
+import clinic1 from "@/assets/clinic-2.jpg";
+import clinic2 from "@/assets/clinic-1.jpg";
+import doctorDesk from "@/assets/clinic-1.jpg";
+import clinicSignboard from "@/assets/clinic-2.jpg";
 import { GraduationCap, ShieldCheck, Heart } from "lucide-react";
 
 import { breadcrumbSchema, personSchema, DOCTORS } from "@/lib/schema";
